@@ -39,3 +39,4 @@ def delete_product(product_id: int, db: Session = Depends(get_db)):
     if not deleted:
         raise HTTPException(status_code=404, detail="Product not found")
     return deleted
+ 
